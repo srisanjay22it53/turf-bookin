@@ -988,6 +988,39 @@ FEATURED TURFS
 
 }
 
+.card-img{
+    width:100%;
+    height:230px;
+    overflow:hidden;
+    background:linear-gradient(135deg,#15803d,#22c55e);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.card-img img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+    transition:transform .35s ease;
+}
+
+.card:hover .card-img img{
+    transform:scale(1.06);
+}
+
+.card-img.large{
+    height:420px;
+    border-radius:20px;
+    margin-bottom:30px;
+}
+
+.card-img.large img{
+    border-radius:20px;
+    object-fit:cover;
+}
+
 .image-placeholder.small{
 
     height:230px;
@@ -2077,6 +2110,30 @@ TURF DETAILS PAGE
 
 }
 
+.card-img.large{
+    height:420px;
+    border-radius:20px;
+    margin-bottom:30px;
+    overflow:hidden;
+    background:linear-gradient(135deg,#15803d,#22c55e);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.card-img.large img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius:20px;
+    display:block;
+    transition:transform .5s ease;
+}
+
+.card-img.large:hover img{
+    transform:scale(1.04);
+}
+
 .image-placeholder.large{
 
     height:420px;
@@ -2285,6 +2342,7 @@ grid-template-columns:1fr;
 
 }
 
+.card-img.large,
 .image-placeholder.large{
 
 height:260px;
